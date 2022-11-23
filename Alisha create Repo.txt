@@ -1,0 +1,117 @@
+Yojana Sawant@LAPTOP-8OH2GOD4 MINGW64 /d
+$ cd C:
+
+Yojana Sawant@LAPTOP-8OH2GOD4 MINGW64 /c
+$ cd Github:
+bash: cd: Github:: No such file or directory
+
+Yojana Sawant@LAPTOP-8OH2GOD4 MINGW64 /c
+$ cd Github
+
+Yojana Sawant@LAPTOP-8OH2GOD4 MINGW64 /c/Github
+$ git init
+Initialized empty Git repository in C:/Github/.git/
+
+Yojana Sawant@LAPTOP-8OH2GOD4 MINGW64 /c/Github (master)
+$ git remote add origin https://github.com/Yugenrane/GroupPractice.git
+
+Yojana Sawant@LAPTOP-8OH2GOD4 MINGW64 /c/Github (master)
+$ git branch main
+fatal: not a valid object name: 'master'
+
+Yojana Sawant@LAPTOP-8OH2GOD4 MINGW64 /c/Github (master)
+$ git branch Main
+fatal: not a valid object name: 'master'
+
+Yojana Sawant@LAPTOP-8OH2GOD4 MINGW64 /c/Github (master)
+$ git branch -m Main
+
+Yojana Sawant@LAPTOP-8OH2GOD4 MINGW64 /c/Github (Main)
+$ git clone  ^C
+
+Yojana Sawant@LAPTOP-8OH2GOD4 MINGW64 /c/Github (Main)
+$ git clone https://github.com/Yugenrane/GroupPractice.git
+Cloning into 'GroupPractice'...
+remote: Enumerating objects: 27, done.
+remote: Counting objects: 100% (27/27), done.
+remote: Compressing objects: 100% (22/22), done.
+remote: Total 27 (delta 6), reused 25 (delta 4), pack-reused 0
+Receiving objects: 100% (27/27), 6.35 KiB | 249.00 KiB/s, done.
+Resolving deltas: 100% (6/6), done.
+
+Yojana Sawant@LAPTOP-8OH2GOD4 MINGW64 /c/Github (Main)
+$ git status
+On branch Main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        GroupPractice/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Yojana Sawant@LAPTOP-8OH2GOD4 MINGW64 /c/Github (Main)
+$ git add .
+warning: adding embedded git repository: GroupPractice
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> GroupPractice
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached GroupPractice
+hint:
+hint: See "git help submodule" for more information.
+
+Yojana Sawant@LAPTOP-8OH2GOD4 MINGW64 /c/Github (Main)
+$ git status
+On branch Main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   GroupPractice
+
+
+Yojana Sawant@LAPTOP-8OH2GOD4 MINGW64 /c/Github (Main)
+$ git commit -m "Commited"
+[Main (root-commit) bbf62e5] Commited
+ 1 file changed, 1 insertion(+)
+ create mode 160000 GroupPractice
+
+Yojana Sawant@LAPTOP-8OH2GOD4 MINGW64 /c/Github (Main)
+$ git log
+commit bbf62e5d2099a5fb5359fc4ff4415940fbc25498 (HEAD -> Main)
+Author: Alisha <alishasawant44@gmail.com>
+Date:   Wed Nov 23 22:07:38 2022 +0530
+
+    Commited
+
+Yojana Sawant@LAPTOP-8OH2GOD4 MINGW64 /c/Github (Main)
+$ git pull
+remote: Enumerating objects: 27, done.
+remote: Counting objects: 100% (27/27), done.
+remote: Compressing objects: 100% (22/22), done.
+remote: Total 27 (delta 6), reused 25 (delta 4), pack-reused 0
+Unpacking objects: 100% (27/27), 6.33 KiB | 4.00 KiB/s, done.
+From https://github.com/Yugenrane/GroupPractice
+ * [new branch]      Main       -> origin/Main
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> Main
+
+
+Yojana Sawant@LAPTOP-8OH2GOD4 MINGW64 /c/Github (Main)
+$
